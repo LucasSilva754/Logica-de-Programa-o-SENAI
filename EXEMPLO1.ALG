@@ -1,28 +1,28 @@
 Algoritmo "Exemplo1"
-// Disciplina   : [Linguagem e Lógica de Programação]
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Professor   : Antonio Carlos Nicolodi 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
-// Autor(a)    : Jota
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
+// Autor(a)    : Lucas Silva de Jesus Ferreira
 // Data atual  : 21/03/2023
 Var
-// Seção de Declarações das variáveis 
-n1, n2, soma, sub, mult, divi: real
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
+n1, n2, soma, subtracao, multiplicacao, divisao: real
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc... 
 
-escreval("digite um número")
+escreval("digite um nÃºmero")
 leia(n1)
-escreval("digite outro número")
+escreval("digite outro nÃºmero")
 leia(n2)
 soma <- n1+n2
-sub <- n1-n2
-mult <- n1*n2
-divi <- n1/n2
-escreval("primeiro número=", n1)
-escreval("segundo número=", n2)
+subtracao <- n1-n2
+multiplicacao <- n1*n2
+divisao <- n1/n2
+escreval("primeiro nÃºmero=", n1)
+escreval("segundo nÃºmero=", n2)
 escreval("soma=", soma)
-escreval("sub=", sub)
-escreval("mult=", mult)
-escreval("divi=", divi)
+escreval("subtracao=", subtracao)
+escreval("multiplicacao=", multiplicacao)
+escreval("divisao=", divisao)
 Fimalgoritmo
