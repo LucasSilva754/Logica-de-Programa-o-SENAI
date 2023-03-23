@@ -1,15 +1,15 @@
 Algoritmo "semnome"
-// Disciplina   : [Linguagem e Lógica de Programação]
+// Disciplina   : [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Professor   : Antonio Carlos Nicolodi 
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    :Lucas Silva
 // Data atual  : 21/03/2023
 Var
-// Seção de Declarações das variáveis 
+// SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis 
 
 nome:caractere
 idade:inteiro
-media, n1, n2, n3, n4:real
+media, n1, n2, n3:real
 Inicio
 escreva(" qual o nome? ")
 escreval(" ")
@@ -17,19 +17,16 @@ leia (nome)
 escreva(" qual a idade? ")
 escreval(" ")
 leia (idade)
-escreva(" quais as notas do 1 bimestre? ")
+escreva(" quais as notas do 1 Trimestre? ")
 escreval(" ")
 leia(n1)
-escreva(" quais as medias 2 bimestre ")
+escreva(" quais as medias 2 Trimestre? ")
 escreval(" ")
 leia(n2)
-escreva(" quais as medias 3 bimestre ")
+escreva(" quais as medias 3 Trimestre? ")
 escreval(" ")
 leia(n3)
-escreva(" quais as medias 4 bimestre ")
-escreval(" ")
-leia(n4)
-media <- (n1 + n2 + n3 +n4)/4
+media <- (n1 + n2 + n3)/3
 limpatela
 escreval(" a media do aluno ", media )
 se (media >= 7) entao
