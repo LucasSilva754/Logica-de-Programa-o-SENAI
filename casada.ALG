@@ -1,33 +1,54 @@
 Algoritmo "semnome"
-// Disciplina  :  [Linguagem e Lógica de Programação]
+// Disciplina  :  [Linguagem e LÃ³gica de ProgramaÃ§Ã£o]
 // Professor   : Antonio Carlos Nicolodi
-// Descrição   : Aqui você descreve o que o programa faz! (função)
+// DescriÃ§Ã£o   : Aqui vocÃª descreve o que o programa faz! (funÃ§Ã£o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 30/03/2023
 Var
-   // Seção de Declarações das variáveis
-   nome, sexo, estadoCivil, f, casada:caractere
-   anos:inteiro
+   // SeÃ§Ã£o de DeclaraÃ§Ãµes das variÃ¡veis
+   nome, sexo, estadoCivil, f, m: caractere
+anosCasada: inteiro
 
 Inicio
-   // Seção de Comandos, procedimento, funções, operadores, etc...
-   escreval (" Digite o seu nome. ")
-   leia (nome)
-   escreval (" Se seu genero for feminino digite f, se for masculino digite m. ")
-   leia (sexo)
-   escreval (" Qual o seu estado civil? ")
-   leia (estadoCivil)
-
-   se (sexo>=f) e (estadoCivil>casada) entao
+   // SeÃ§Ã£o de Comandos, procedimento, funÃ§Ãµes, operadores, etc...
+  escreval(" Digite o seu nome. ")
+   leia(nome)
+   escreval(" ")
+   escreval(" Qual o seu gÃªnero? Digite 'f' se for do sexo feminino e 'm' se for do sexo masculino.")
+   leia(sexo)
+   se(sexo>=f) entao
       limpatela
-      escreval (" Com quantos anos é casada? ")
-      leia (anos)
-      limpatela
-      escreval (" Nome: ", nome)
-      escreval (" Sexo: ", sexo)
-      escreval (" Estado Civil: ", estadoCivil)
-      escreval (" Anos de casada: ", anos)
- senao
-
+      escreval(" Qual Ã© o seu estado civil?  ")
+      leia(estadoCivil)
+      se(estadoCivil="casada")entao
+         escreval(" Com quantos anos se encontra casada? ")
+         leia(anosCasada)
+         limpatela
+         escreval("Nome:", nome)
+         escreval("Sexo:", sexo)
+         escreval("Estado civil:", estadoCivil)
+         escreval("Anos casada:", anosCasada)
+      senao
+         se(estadoCivil>="solteira")entao
+            limpatela
+            escreval("Nome:", nome)
+            escreval("Sexo:", sexo)
+            escreval("Estado civil:", estadoCivil)
+         fimse
+      fimse
    fimse
-Fimalgoritmo
+   se(sexo>=m)entao
+      se(estadoCivil="casado")entao
+         limpatela
+         escreval("Nome:", nome)
+         escreval("Sexo:", sexo)
+         escreval("Estado civil:", estadoCivil)
+      senao
+         se(estadoCivil>="solteiro")entao
+            limpatela
+            escreval("Nome:", nome)
+            escreval("Sexo:", sexo)
+            escreval("Estado civil:", estadoCivil)
+         fimse
+      fimse
+   fimse
