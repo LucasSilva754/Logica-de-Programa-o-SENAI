@@ -1,21 +1,21 @@
 Algoritmo "semnome"
-// Disciplina  :  [Linguagem e LÛgica de ProgramaÁ„o] 
+// Disciplina  :  [Linguagem e L√≥gica de Programa√ß√£o] 
 // Professor   : Antonio Carlos Nicolodi 
-// DescriÁ„o   : Aqui vocÍ descreve o que o programa faz! (funÁ„o)
+// Descri√ß√£o   : Aqui voc√™ descreve o que o programa faz! (fun√ß√£o)
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 04/04/2023
 Var
-// SeÁ„o de DeclaraÁıes das vari·veis 
+// Se√ß√£o de Declara√ß√µes das vari√°veis 
 fruta:caracter
    valorMorango,valorMaca:real
    quantidadeMorango,quantidadeMaca:inteiro
 
 Inicio
-// SeÁ„o de Comandos, procedimento, funÁıes, operadores, etc... 
+// Se√ß√£o de Comandos, procedimento, fun√ß√µes, operadores, etc... 
    escreval(" ")
-   escreval(" PreÁo do morango de R$:2,50 fica por R$:2,20 acima de 5kg cada. ")
+   escreval(" Pre√ßo do morango de R$:2,50 fica por R$:2,20 acima de 5kg cada. ")
    escreval(" ")
-   escreval(" PreÁo da maÁ„ de R$:1,80 fica por R$:1,50 acima de 5kg cada. ")
+   escreval(" Pre√ßo da ma√ß√£ de R$:1,80 fica por R$:1,50 acima de 5kg cada. ")
    escreval(" ")
    escreval(" ")
    escreval(" Dito isso, o que o senhor(a) deseja? ")
@@ -25,32 +25,35 @@ Inicio
    escreval(" Por favor digite quantos kilos de morango queira. ")
    leia(quantidadeMorango)
    se(quantidadeMorango>=5)entao
-      valorMorango<-(quantidadeMorango*2.20)
-      escreval(" ")
-      escreval(" ")
-      escreval(" O valor dos morangos desejados È igual a R$: ",valorMorango :6:2)
-      senao
       valorMorango<-(quantidadeMorango*2.50)
       escreval(" ")
       escreval(" ")
-      escreval(" O valor dos morangos desejados È igual a R$: ",valorMorango :6:2)
+      escreval(" O valor dos morangos desejados √© igual a R$: ",valorMorango :6:2)
+      senao
+      valorMorango<-(quantidadeMorango*2.20)
+      escreval(" ")
+      escreval(" ")
+      escreval(" O valor dos morangos desejados √© igual a R$: ",valorMorango :6:2)
    fimse
    fimse
-   se(fruta="maÁ„")entao
+   se(fruta="ma√ß√£")entao
    limpatela
-   escreval(" Por favor digite quantos kilos de maÁ„s queira. ")
+   escreval(" Por favor digite quantos kilos de ma√ß√£s queira. ")
    leia(quantidadeMaca)
    se(quantidadeMaca>=5)entao
-      valorMaca<-(quantidadeMaca*1.50)
-      escreval(" ")
-      escreval(" ")
-      escreval(" O valor das maÁ„s desejados È igual a R$: ",valorMaca :6:2)
-      senao
       valorMaca<-(quantidadeMaca*1.80)
       escreval(" ")
       escreval(" ")
-      escreval(" O valor das maÁ„s desejados È igual a R$: ",valorMaca :6:2)
+      escreval(" O valor das ma√ß√£s desejados √© igual a R$: ",valorMaca :6:2)
+      senao
+      valorMaca<-(quantidadeMaca*1.50)
+      escreval(" ")
+      escreval(" ")
+      se(quantidadeMaca>8) ou (valorMaca>25)entao
+               escreval("O valor das ma√ß√£s desejados √© igual a R$:",valorMaca-(valorMaca*0.10) :6:2)
+            senao
+      escreval(" O valor das ma√ß√£s desejados √© igual a R$: ",valorMaca :6:2)
    fimse
    fimse
-
+   fimse
 Fimalgoritmo
